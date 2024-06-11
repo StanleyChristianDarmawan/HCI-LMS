@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINUS Aspire</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="headSection1">
+            <div class="menu">
+                <img src="assets/icon/titik.svg" alt="Menu">
+            </div>
+            <div class="vertical-line">
+
+            </div>
+            <div class="welcome">
+                <div class="welcomeTop">
+                    <span>WELCOME BACK</span>
+                </div>
+                <div class="welcomeBottom">
+                    <span>Stanley</span>
+                </div>
+            </div>
+        </div>
+        <div class="headSection2">
+            <span class="brand1">BINUS</span> <span class="brand2">ASPIRE</span>
+        </div>
+        <div class="headSection3">
+            <div class="bellNotification">
+                <img src="assets/icon/bell.svg" alt="Notification">
+            </div>
+            <div class="photoProfile">
+                <img src="assets/icon/profile-navbar.svg" alt="Profile">
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- TOGGLE MOBILE VIEW -->
+    <button id="menu-toggle">☰</button>
+    
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="card-points">
+                <div class="point-item">
+                    <span class="pointTitle">Student Activity Points</span>
+                    <br>
+                    <span class="point">XX/120</span>
+                </div>
+                <div class="point-item">
+                    <span class="pointTitle">Community Service</span>
+                    <br>
+                    <span class="point">XX/30</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/regis.svg" alt="Registration"><a href="#"><span> Registration</span></a>
+            </div>  
+            <div class="menu-item">
+                <img src="assets/icon/dash.svg" alt="Dashboard"><a href="#"><span> Dashboard</span></a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/course.svg" alt="Courses"> <a href="#"><span> Courses</span></a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/asses.svg" alt="Assessment"> <a href="#"><span> Assessment</span></a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/attend.svg" alt="Attendance"> <a href="#"><span> Attendance</span></a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/jadwal.svg" alt="Schedule"> <a href="#"><span> Schedule</span></a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/learn.svg" alt="LearnIT"> <a href="#"><span> LearnIT</span></a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/icon/info.svg" alt="Information"> <a href="#"><span> Information</span></a>
+            </div>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- MAIN -->
+        <main>
+            <span class="title">Dashboard</span>
+            <hr>
+            <div class="main-grid">
+
+                <div class="firstSection">
+                    <h2>Upcoming Class</h2>
+                    <div class="upcomingClass">
+                        <div class="class-place">
+                            <span>Onsite Class</span>
+                        </div>
+                        <div class="class">
+                            <span>LB75 - LEC</span>
+                        </div>
+                        <div class="course">
+                            <span>Human Computer Interaction</span>
+                        </div>
+
+                        <div class="upcomingLecturer">
+                            <img src="assets/icon/profile.svg" alt="Lecturer"><span>Budi Juarto, S. T.,M.Kom.</span>
+                        </div>
+                        <div class="upcomingCourseID">
+                            <img src="assets/icon/id.svg" alt="CourseID"><span>COMP12345678</span>
+                        </div>
+                        <div class="upcomingLocation">
+                            <img src="assets/icon/location.svg" alt="Location"><span>Zoom Meeting</span>
+                        </div>
+                        <div class="upcomingSchedule">
+                            <img src="assets/icon/time.svg" alt="Schedule"><span>07.00 - 23.00 GMT+7</span>
+                        </div>
+                        <div class="absentBtn">
+                            <button class="absent">Take Attendance</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondSection">
+                    <h2>To-Do List</h2>
+                    <div class="todolist">
+                        <!-- CONTENT -->
+                    </div>
+                </div>
+                <div class="thirdSection">
+                    <h2>Schedule</h2>
+                    <div class="schedule">
+                        <!-- CONTENT -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- END MAIN -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('sidebar-hidden');
+        });
+    </script>
+</body>
+</html>

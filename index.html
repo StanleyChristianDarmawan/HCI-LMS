@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BINUS Aspire</title>
-    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
         <div class="headSection1">
             <div class="menu">
-                <img src="../assets/icon/titik.svg" alt="Menu">
+                <img src="assets/icon/titik.svg" alt="Menu">
             </div>
             <div class="vertical-line">
 
@@ -30,10 +30,10 @@
         </div>
         <div class="headSection3">
             <div class="bellNotification">
-                <img src="../assets/icon/bell.svg" alt="Notification">
+                <img src="assets/icon/bell.svg" alt="Notification">
             </div>
             <div class="photoProfile">
-                <img src="../assets/icon/profile-navbar.svg" alt="Profile">
+                <img src="assets/icon/profile-navbar.svg" alt="Profile">
             </div>
         </div>
     </header>
@@ -59,28 +59,28 @@
                 </div>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/regis.svg" alt="Registration"><a href="courseRegistration.html"><span> Registration</span></a>
+                <img src="assets/icon/regis.svg" alt="Registration"><a href="courseRegistration.html"><span> Registration</span></a>
             </div>  
             <div class="menu-item">
-                <img src="../assets/icon/dash.svg" alt="Dashboard"><a href="index.html"><span> Dashboard</span></a>
+                <img src="assets/icon/dash.svg" alt="Dashboard"><a href="index.html"><span> Dashboard</span></a>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/course.svg" alt="Courses"> <a href="courses.html"><span> Courses</span></a>
+                <img src="assets/icon/course.svg" alt="Courses"> <a href="courses.html"><span> Courses</span></a>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/asses.svg" alt="Assessment"> <a href="assessment.html"><span> Assessment</span></a>
+                <img src="assets/icon/asses.svg" alt="Assessment"> <a href="assessment.html"><span> Assessment</span></a>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/attend.svg" alt="Attendance"> <a href="attendance.html"><span> Attendance</span></a>
+                <img src="assets/icon/attend.svg" alt="Attendance"> <a href="attendance.html"><span> Attendance</span></a>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/jadwal.svg" alt="Schedule"> <a href="schedule.html"><span> Schedule</span></a>
+                <img src="assets/icon/jadwal.svg" alt="Schedule"> <a href="schedule.html"><span> Schedule</span></a>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/learn.svg" alt="LearnIT"> <a href="learnIT.html"><span> LearnIT</span></a>
+                <img src="assets/icon/learn.svg" alt="LearnIT"> <a href="learnIT.html"><span> LearnIT</span></a>
             </div>
             <div class="menu-item">
-                <img src="../assets/icon/info.svg" alt="Information"> <a href="information.html"><span> Information</span></a>
+                <img src="assets/icon/info.svg" alt="Information"> <a href="information.html"><span> Information</span></a>
             </div>
         </aside>
         <!-- END SIDEBAR -->
@@ -105,16 +105,16 @@
                         </div>
 
                         <div class="upcomingLecturer">
-                            <img src="../assets/icon/profile.svg" alt="Lecturer"><span>Budi Juarto, S. T.,M.Kom.</span>
+                            <img src="assets/icon/profile.svg" alt="Lecturer"><span>Budi Juarto, S. T.,M.Kom.</span>
                         </div>
                         <div class="upcomingCourseID">
-                            <img src="../assets/icon/id.svg" alt="CourseID"><span>COMP12345678</span>
+                            <img src="assets/icon/id.svg" alt="CourseID"><span>COMP12345678</span>
                         </div>
                         <div class="upcomingLocation">
-                            <img src="../assets/icon/location.svg" alt="Location"><span>Zoom Meeting</span>
+                            <img src="assets/icon/location.svg" alt="Location"><span>Zoom Meeting</span>
                         </div>
                         <div class="upcomingSchedule">
-                            <img src="../assets/icon/time.svg" alt="Schedule"><span>07.00 - 23.00 GMT+7</span>
+                            <img src="assets/icon/time.svg" alt="Schedule"><span>07.00 - 23.00 GMT+7</span>
                         </div>
                         <div class="absentBtn">
                             <button class="absent">Take Attendance</button>
@@ -214,6 +214,65 @@
         </div>
     </div>
     <!-- END POPUPS -->
+
+    <script>
+        // POPUP
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("popup1").style.display = "flex";
+
+
+            document.getElementById("next-popup1").addEventListener("click", function() {
+                document.getElementById("popup1").style.display = "none";
+                document.getElementById("popup2").style.display = "flex";
+            });
+
+            document.getElementById("next-popup2-maybe").addEventListener("click", function() {
+                document.getElementById("popup2").style.display = "none";
+                document.getElementById("popup5").style.display = "flex";
+            });
+
+            document.getElementById("next-popup2-yes").addEventListener("click", function() {
+                document.getElementById("popup2").style.display = "none";
+                document.getElementById("popup3").style.display = "flex";
+                setTimeout(function() {
+                    document.getElementById("popup3").style.display = "none";
+                    document.getElementById("popup4").style.display = "flex";
+                }, 5000);
+            });
+
+            document.getElementById("next-popup4").addEventListener("click", function() {
+                document.getElementById("popup4").style.display = "none";
+                document.getElementById("popup5").style.display = "flex";
+            });
+
+            document.getElementById("next-popup5-maybe").addEventListener("click", function() {
+                document.getElementById("popup5").style.display = "none";
+            });
+
+            document.getElementById("next-popup5-yes").addEventListener("click", function() {
+                document.getElementById("popup5").style.display = "none";
+                document.getElementById("popup6").style.display = "flex";
+            });
+
+            document.getElementById("next-popup6").addEventListener("click", function() {
+                document.getElementById("popup6").style.display = "none";
+                document.getElementById("popup7").style.display = "flex";
+            });
+
+            document.getElementById("next-popup7").addEventListener("click", function() {
+                document.getElementById("popup7").style.display = "none";
+                document.getElementById("popup8").style.display = "flex";
+                setTimeout(function() {
+                    document.getElementById("popup8").style.display = "none";
+                    document.getElementById("popup9").style.display = "flex";
+                    setTimeout(function() {
+                        document.getElementById("popup9").style.display = "none";
+                    }, 5000);
+                }, 5000);
+            });
+        });
+        // END POPUP
+    </script>
 
 <script src="scripts/script.js"></script>
 </body>

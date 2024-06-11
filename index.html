@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
+    <div id="background">
     <!-- HEADER -->
     <header>
         <div class="headSection1">
@@ -140,6 +141,7 @@
 
     </div>
     <!-- END MAIN CONTAINER -->
+    </div>
 
     <!-- POPUPS -->
     <div id="popup1" class="popup-overlay">
@@ -152,8 +154,8 @@
     <div id="popup2" class="popup-overlay">
         <div class="popup-content">
             <h2>Would You Like To Analize Your Previous Grades Now?</h2>
-            <button id="next-popup2-yes" class="popup-button">Yes</button>
             <button id="next-popup2-maybe" class="popup-button">Maybe Next Time</button>
+            <button id="next-popup2-yes" class="popup-button">Yes</button>
         </div>
     </div>
 
@@ -175,8 +177,8 @@
     <div id="popup5" class="popup-overlay">
         <div class="popup-content">
             <h2>Would You Like To Input Your Prefered Learning Pathways?</h2>
-            <button id="next-popup5-yes" class="popup-button">Yes</button>
             <button id="next-popup5-maybe" class="popup-button">Maybe Next Time</button>
+            <button id="next-popup5-yes" class="popup-button">Yes</button>
         </div>
     </div>
 
@@ -219,12 +221,16 @@
         // POPUP
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("popup1").style.display = "flex";
-
+            document.getElementById("background").classList.add("blur-background");
 
             document.getElementById("next-popup1").addEventListener("click", function() {
                 document.getElementById("popup1").style.display = "none";
                 document.getElementById("popup2").style.display = "flex";
             });
+
+            function removeBlur() {
+                document.getElementById("background").classList.remove("blur-background");
+            }
 
             document.getElementById("next-popup2-maybe").addEventListener("click", function() {
                 document.getElementById("popup2").style.display = "none";
@@ -267,6 +273,7 @@
                     document.getElementById("popup9").style.display = "flex";
                     setTimeout(function() {
                         document.getElementById("popup9").style.display = "none";
+                        removeBlur();
                     }, 5000);
                 }, 5000);
             });

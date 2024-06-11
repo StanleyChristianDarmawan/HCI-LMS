@@ -125,14 +125,35 @@
 
                 <div class="secondSection">
                     <h2>Schedule</h2>
-                    <div class="todolist">
-                        <!-- CONTENT -->
+                    <div class="schedule">
+                        
                     </div>
                 </div>
                 <div class="thirdSection">
                     <h2>To-Do List</h2>
-                    <div class="schedule">
-                        <!-- CONTENT -->
+                    <div class="todolist">
+                        <span>Assignment</span>
+                        <div class="assignment">
+                            <span class="todolistAssignment">AOL - Human Computer Interaction</span>
+                            <br>
+                            <span class="todolistDeadline">Deadline: 22/06/2024 22.00 GMT +7</span>
+                            <br>
+                            <span class="todolistCourse">Human Computer Interaction</span>
+                            <br>
+                            <button class="detailBtn">See Detail</button>
+                        </div>
+                        <div class="assignment">
+                            <span class="todolistAssignment">Assignment - Scientific Computing</span>
+                            <br>
+                            <span class="todolistDeadline">Deadline: 22/06/2024 22.00 GMT +7</span>
+                            <br>
+                            <span class="todolistCourse">Scientific Computing</span>
+                            <br>
+                            <button class="detailBtn">See Detail</button>
+                        </div>
+                        <div class="viewBtnContainer">
+                            <button class="viewBtn">View All</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,6 +274,7 @@
 
             document.getElementById("next-popup5-maybe").addEventListener("click", function() {
                 document.getElementById("popup5").style.display = "none";
+                removeBlur();
             });
 
             document.getElementById("next-popup5-yes").addEventListener("click", function() {

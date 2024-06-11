@@ -334,8 +334,82 @@ main .title {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, 0.2);
     cursor: pointer;
-
 }
+
+.todolist > span{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #444343;
+}
+
+.todolistAssignment{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.todolistDeadline{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FF0000;
+}
+
+.todolistCourse{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #6E6E6E;
+}
+
+.detailBtn{
+    width: 155px;
+    height: 25px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    color: #FFFFFF;
+    background: #F29015;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.viewBtn{
+    width: 98px;
+    height: 27px;
+    background: #F29723;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF;
+    align-self: flex-end;
+    border: 0;
+    cursor: pointer;
+}
+
+.viewBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+.assigment{
+    margin-top: 15px;
+}
+
 
 .upcomingClass {
     grid-column: 1;

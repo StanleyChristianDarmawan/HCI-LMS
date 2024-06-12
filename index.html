@@ -67,7 +67,7 @@
                     <img src="assets/icon/dash.svg" alt="Dashboard"><a href="pages/dashboard.html"><span> Dashboard</span></a>
                 </div>
                 <div class="menu-item">
-                    <img src="assets/icon/course.svg" alt="Courses"> <a href="courses.html"><span> Courses</span></a>
+                    <img src="assets/icon/course.svg" alt="Courses"> <a href="pages/courses.html"><span> Courses</span></a>
                 </div>
                 <div class="menu-item">
                     <img src="assets/icon/asses.svg" alt="Assessment"> <a href="assessment.html"><span> Assessment</span></a>
@@ -100,7 +100,7 @@
                                 <img src="assets/icon/courseRegist.svg" alt="">
                                 <h2>2/1 Credit</h2>
                             </div>
-                            <button class="view-detail-btn">View Detail</button>
+                            <button class="view-detail-btn" onclick="openModal()">View Detail</button>
                         </div>
                         <div class="course-card">
                             <p>COMP1235678</p>
@@ -109,7 +109,7 @@
                                 <img src="assets/icon/courseRegist.svg" alt="">
                                 <h2>2/1 Credit</h2>
                             </div>
-                            <button class="view-detail-btn">View Detail</button>
+                            <button class="view-detail-btn" onclick="openModal()">View Detail</button>
                         </div>
                         <div class="course-card">
                             <p>COMP1235678</p>
@@ -118,7 +118,7 @@
                                 <img src="assets/icon/courseRegist.svg" alt="">
                                 <h2>2/0 Credit</h2>
                             </div>
-                            <button class="view-detail-btn">View Detail</button>
+                            <button class="view-detail-btn" onclick="openModal()">View Detail</button>
                         </div>
                         <div class="course-card">
                             <p>COMP1235678</p>
@@ -127,7 +127,7 @@
                                 <img src="assets/icon/courseRegist.svg" alt="">
                                 <h2>4/2 Credit</h2>
                             </div>
-                            <button class="view-detail-btn">View Detail</button>
+                            <button class="view-detail-btn" onclick="openModal()">View Detail</button>
                         </div>
                         <div class="course-card">
                             <p>COMP1235678</p>
@@ -136,7 +136,7 @@
                                 <img src="assets/icon/courseRegist.svg" alt="">
                                 <h2>4/0 Credit</h2>
                             </div>
-                            <button class="view-detail-btn">View Detail</button>
+                            <button class="view-detail-btn" onclick="openModal()">View Detail</button>
                         </div>
                         <div class="course-card">
                             <p>COMP1235678</p>
@@ -145,7 +145,7 @@
                                 <img src="assets/icon/courseRegist.svg" alt="">
                                 <h2>2/0 Credit</h2>
                             </div>
-                            <button class="view-detail-btn">View Detail</button>
+                            <button class="view-detail-btn" onclick="openModal()">View Detail</button>
                         </div>
                     </div>
                     <div class="courseFooter">
@@ -159,6 +159,81 @@
         </div>
         <!-- END MAIN CONTAINER -->
         </div>
+
+
+        <!-- COURSE MODAL -->
+        <!-- Popup Modal Structure -->
+        <div id="courseModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Human Computer Interaction</h2>
+                <hr>
+                <div class="modal-container">
+                    <div class="modal-item">
+                        <h3>Credit</h3>
+                        <p>2/1</p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Course Code</h3>
+                        <p>COMP12345678</p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Course Status</h3>
+                        <p>Taken</p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Minimum Passing Grade</h3>
+                        <p style="color: #05FF00;">0</p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Achieved Grade</h3>
+                        <p style="color: #FF0000;">E</p>
+                    </div>
+                </div>
+            <hr>
+            <div class="modal-sections">
+                <div class="modal-section">
+                <h3>Description</h3>
+                <p>This course comprises the human factors in interactive software, theories, principles and guidance in interface development, interface components, interface styles, disciplines associated with design and evaluation of user interface in order to support the usability. This course gives students the ability to design and evaluate the user interface.</p>
+                </div>
+                <div class="modal-section">
+                <h3>Learning Outcomes</h3>
+                <p>1. (C2) Comprehension: describe<br>
+                2. (C3) Application: use<br>
+                3. (C6) Evaluation: choose</p>
+                </div>
+                <div class="modal-section">
+                <h3>Topic</h3>
+                    <p>
+                        1. Figma<br>
+                        2. Introduction to HTML<br>
+                        3. Introduction to CSS<br>
+                        4. Introduction to Javascript<br>
+                        5. Javascript form<br>
+                        6. Project<br>
+                        7. Interaction Design<br>
+                        8. Understanding and Conceptualizing Interaction<br>
+                        9. Cognitive Aspects<br>
+                        10. Social Interaction<br>
+                        11. Emotional Interaction<br>
+                        12. Interfaces<br>
+                        13. Review I<br>
+                        14. Discovering Requirements<br>
+                        15. Data Analysis, Interpretation, and Presentation<br>
+                        16. Design, Prototyping and Construction<br>
+                        17. Introducing Evaluation<br>
+                        18. Advanced Evaluation<br>
+                        19. Review II
+                    </p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="goBackBtn">Go Back</button>
+                <button id="addToCartBtn">Add To Cart</button>
+            </div>
+            </div>
+        </div>
+        <!-- END COURSE MODAL -->
     
         <!-- POPUPS -->
         <div id="popup1" class="popup-overlay">
@@ -233,71 +308,6 @@
             </div>
         </div>
         <!-- END POPUPS -->
-    
-    <script>
-        // POPUP
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("popup1").style.display = "flex";
-            document.getElementById("background").classList.add("blur-background");
-
-            document.getElementById("next-popup1").addEventListener("click", function() {
-                document.getElementById("popup1").style.display = "none";
-                document.getElementById("popup2").style.display = "flex";
-            });
-
-            function removeBlur() {
-                document.getElementById("background").classList.remove("blur-background");
-            }
-
-            document.getElementById("next-popup2-maybe").addEventListener("click", function() {
-                document.getElementById("popup2").style.display = "none";
-                document.getElementById("popup5").style.display = "flex";
-            });
-
-            document.getElementById("next-popup2-yes").addEventListener("click", function() {
-                document.getElementById("popup2").style.display = "none";
-                document.getElementById("popup3").style.display = "flex";
-                setTimeout(function() {
-                    document.getElementById("popup3").style.display = "none";
-                    document.getElementById("popup4").style.display = "flex";
-                }, 5000);
-            });
-
-            document.getElementById("next-popup4").addEventListener("click", function() {
-                document.getElementById("popup4").style.display = "none";
-                document.getElementById("popup5").style.display = "flex";
-            });
-
-            document.getElementById("next-popup5-maybe").addEventListener("click", function() {
-                document.getElementById("popup5").style.display = "none";
-                removeBlur();
-            });
-
-            document.getElementById("next-popup5-yes").addEventListener("click", function() {
-                document.getElementById("popup5").style.display = "none";
-                document.getElementById("popup6").style.display = "flex";
-            });
-
-            document.getElementById("next-popup6").addEventListener("click", function() {
-                document.getElementById("popup6").style.display = "none";
-                document.getElementById("popup7").style.display = "flex";
-            });
-
-            document.getElementById("next-popup7").addEventListener("click", function() {
-                document.getElementById("popup7").style.display = "none";
-                document.getElementById("popup8").style.display = "flex";
-                setTimeout(function() {
-                    document.getElementById("popup8").style.display = "none";
-                    document.getElementById("popup9").style.display = "flex";
-                    setTimeout(function() {
-                        document.getElementById("popup9").style.display = "none";
-                        removeBlur();
-                    }, 5000);
-                }, 5000);
-            });
-        });
-        // END POPUP
-    </script>
     
     <script src="scripts/script.js"></script>
 </body>

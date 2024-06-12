@@ -31,7 +31,6 @@ HCI-LMS
 │  │  ├─ 📄time.svg
 │  │  └─ 📄titik.svg
 │  ├─ 📁img
-│  │  ├─ 📄aowaok-modified.png
 │  │  ├─ 📄pak_budi-modified.png
 │  │  └─ 📄speedScream-modified.png
 │  └─ 📁styles
@@ -51,7 +50,6 @@ HCI-LMS
 ├─ 📄index.html
 └─ 📄README.md
 ```
-
 
 ## Installation
 

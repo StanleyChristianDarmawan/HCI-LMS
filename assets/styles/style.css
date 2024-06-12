@@ -572,7 +572,9 @@ td{
     padding: 20px;
     border-radius: 8px;
 }
-
+#menu-toggle {
+    display: none;
+}
 /* END MAIN */
 
 /* RESPONSIVE */
@@ -581,6 +583,10 @@ td{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         height: auto;
+    }
+
+    .firstSection {
+        grid-area: 1 / 1 / 2 / 2;
     }
 
     .secondSection {
@@ -628,7 +634,7 @@ td{
     #menu-toggle {
         display: block;
         position: fixed;
-        top: 10px;
+        top: 18%;
         left: 10px;
         z-index: 1001;
         background-color: #00A1E9;
@@ -652,9 +658,17 @@ td{
         grid-template-rows: auto;
     }
 
-    .upcoming-class, .todolist, .schedule {
-        grid-column: 1;
+    .firstSection,
+    .secondSection,
+    .thirdSection {
+        grid-column: 1 / -1;
         grid-row: auto;
+    }
+
+    .upcomingClass, .todolist, .schedule {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        margin-bottom: 20px;
     }
 
     .schedule {
@@ -672,16 +686,37 @@ td{
     .menu-item-schedule {
         font-size: 12px;
     }
+
+    .calendar table {
+        width: 100%;
+    }
+
+    .calendar th, .calendar td {
+        font-size: 14px;
+        padding: 5px;
+    }
 }
 
-/* HIDE MENU */
-/* #menu-toggle {
-    display: none;
-} */
-
-/* For small screens */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     header {
         padding: 10px;
+    }
+
+    .main-grid {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .month, .bold, .light, .today, .todayClass > span, .todayCourse {
+        font-size: 16px;
+    }
+
+    .menu-item-schedule {
+        font-size: 10px;
+    }
+
+    .calendar th, .calendar td {
+        font-size: 12px;
+        padding: 4px;
     }
 }

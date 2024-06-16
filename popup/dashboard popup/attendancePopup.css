@@ -1,0 +1,80 @@
+.popup-attendance{
+    width: 500px;
+    height: 750px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+}
+
+.popup-content{
+    padding: 12px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.popup-bold{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.popup-light{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E6E6E;
+}
+
+.popup-course{
+    align-self: flex-start;
+}
+
+.popup-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.popup-detail-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.popup-detail{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.popup-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-status > img{
+    margin-bottom: 30px;
+}
+
+.popup-info{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 30px;
+}
+
+hr{
+    color: #ABABAB;
+}

@@ -111,15 +111,17 @@ aside {
     font-weight: 600;
     font-size: 20px;
     color: #FFFFFF;
-
     gap: 10px;
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 4px;
-    transition: background-color 0.3s;
-
     margin-bottom: 20px;
+}
+
+.menu-attend{
+    background-color: #015581;
+    border-radius: 50px 0px 0px 50px;
 }
 .menu-item a {
     margin-left: 10px;

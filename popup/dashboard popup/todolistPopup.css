@@ -1,0 +1,79 @@
+.popup-todolist{
+    width: 500px;
+    height: 750px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+}
+
+.popup-content{
+    padding: 12px;
+}
+
+.popup-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-container{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 3px dashed #929292;
+    margin: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.popup-bold{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.popup-light{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6E6E6E;
+}
+
+.popup-red{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FF0000;
+}
+
+.popup-btn{
+    width: 97.89px;
+    height: 27.06px;
+    background: #F29723;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+    border: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+hr{
+    color: #ABABAB;
+}

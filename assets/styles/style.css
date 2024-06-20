@@ -312,6 +312,7 @@ main .title {
     font-size: 16px;
     font-weight: 400;
 }
+
 .upcomingLecturer{
     display: flex;
     align-items: center;
@@ -576,6 +577,7 @@ td{
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 8px;
+    height: 749px;
 }
 #menu-toggle {
     display: none;

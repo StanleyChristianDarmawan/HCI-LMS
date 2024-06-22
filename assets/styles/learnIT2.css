@@ -363,13 +363,67 @@ main .title {
     border-radius: 8px;
 }
 
-.forum{
+.forum-container{
     width: 100%;
-    height: 265px;
+    height: 100%;
     background: #F2F1F1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
 }
+
+.forum-container > *{
+    margin: 0px 15px;
+}
+
+.profile-forum{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-forum >img{
+    width: 35.44px;
+    height: 34.75px;
+}
+
+.profile-name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #898787;
+}
+
+.update-status{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #898787;
+}
+
+.forum > span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #525050;
+}
+
+.forum > *{
+    margin: 0px 45px;
+}
+
+.forum{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 
 
 /* END MAIN */
